@@ -95,7 +95,6 @@ ul {
 /*--- header section ---*/
 header#header {
   width: 100%;
-  height: 710px;
   background: url(../assets/banner_bg.jpg) no-repeat center;
   background-attachment: fixed;
   background-size: cover;
@@ -140,7 +139,6 @@ header#header nav .taglineHeader {
 header #slider {
   display: block;
   margin: 40px auto;
-  max-width: 630px;
 }
 header #slider h1,
 header #slider h2,
@@ -170,6 +168,14 @@ header #slider #social {
 header #slider #social li {
   display: inline-block;
   margin: 10px 10px;
+  margin-top: 120px;
+  opacity: 0.3;
+}
+header #slider #social li:first-child {
+  margin-left: 40%;
+}
+header #slider #social li:hover {
+  opacity: 1;
 }
 header #slider #social li div {
   width: 20px;
@@ -367,8 +373,7 @@ section .heart-border:after {
   display: inline;
 }
 #team .teamList li img {
-  width: 270px;
-  height: 300px;
+  width: 100%;
   margin: 0 auto;
 }
 #team .teamList li h3 {
@@ -526,4 +531,66 @@ footer .logo {
   width: 103px;
   height: 41px;
   background: url(../assets/logo.png) no-repeat center;
+}
+@media (min-width: 768px) and (max-width: 940px) {
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  /*--- horizontal &quot;block&quot; menu ---*/
+  .nav {
+    display: block;
+    height: 100%;
+    width: 100%;
+    float: none;
+  }
+  .nav ul {
+    height: 100%;
+    text-align: center;
+  }
+  .nav ul li {
+    height: 100%;
+    display: inline-block;
+  }
+  .nav ul li:hover {
+    border-top: 1px solid #0FCF8C;
+    margin-top: -1px;
+  }
+  .nav ul li a {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    text-decoration: none;
+    font-size: 0.813em;
+    color: #EEE;
+    padding: 15px 20px;
+  }
+  /*--- header section ---*/
+  header#header nav {
+    width: 100%;
+    height: 70px;
+  }
+  header#header nav .logoContainer {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+  header#header nav .logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  header#header nav .taglineHeader {
+    text-align: center;
+    opacity: 0.3;
+    color: white;
+    float: none;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
 }
