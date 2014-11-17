@@ -546,6 +546,178 @@ footer {
             .column(6);
         }
 
+
+        &:last-child {
+            i {
+                color: #000;
+            } 
+
+            p {
+                margin:  55px 0;
+                color:#fff;
+                border-left: 1px solid #062033;
+                padding-left: 10px;
+            }
+            i + a{
+                display: inline;
+            }
+            a {
+                color: #000;
+            }
+        }
+        form {
+            input {
+                float: left;
+                width: 50%;
+                height: 40px;
+                border: none;
+                border-top: 2px solid white;
+                border-left: 2px solid white; 
+                border-bottom: 2px solid white;  
+                border-radius: 2px;
+                background: rgba(0, 0, 0, 0);
+                display:inline-block;
+
+            }
+
+            button {
+                float: left;
+                background: url(../assets/submit.png) center no-repeat;
+                width: 20%;
+                height: 40px;
+                border: none;
+                border-top: 2px solid white;
+                border-right: 2px solid white; 
+                border-bottom: 2px solid white;
+            }
+        }
+    }
+
+    .logo {
+        padding-bottom: 45px;
+        float: left;
+        content:'';
+        width: 103px;
+        height: 41px;
+        background: url(../assets/logo.png) no-repeat center; 
+        }
+}
+
+
+@media (min-width: 768px) and (max-width: 940px) {
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    height: 100%;
+}
+/*--- horizontal &quot;block&quot; menu ---*/
+
+.nav {
+    float: none;
+    ul {
+        height: 50%;
+        text-align: center;
+        li {
+            height: 100%;
+            display: inline-block;
+            
+            &:hover {
+                border-top: 1px solid #0FCF8C;
+                margin-top: -1px;
+            }
+        }
+        li a {
+            .vertical-align; 
+            display: block;
+            text-decoration: none;
+            font-size :1.5em;
+            color: #EEE;       
+            padding: 5px 20px;
+        }
+    }
+}
+
+/*--- header section ---*/
+
+header#header {
+    
+    nav {
+        width: 100%;
+        height: 150px;
+
+        .logoContainer {
+            
+            display: block;
+            margin: 0 auto;
+            float: none;
+
+        }
+        .logo {
+            width: 200px;
+            height: 41px;
+            float: none;
+            margin: 0 auto;
+        }
+        .taglineHeader {
+            text-align: center;
+            display: block;
+            opacity: 0.3;
+            color: white;
+            float: none;
+            margin-left: 0;
+            padding-left:0;
+            border-left: none;
+          
+        }
+    }
+}
+
+/*--- footer section - put whatever you want here ---*/
+
+footer {
+    background: rgba(33, 182, 151, 0.8);
+    height: 404px;
+    width: 100%;
+    float: left;
+    border-top: 5px solid #062033;
+    article {
+        .column(3);
+    
+        margin-top: 100px;
+
+        &:first-child {
+            div {
+                float: none;
+            }
+        }
+
+        h1 {
+            font-size: 0.875em;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        p {
+            padding:5px;
+        }
+
+        a{
+            font-size :0.813em;
+            padding: 10px 0;
+            display: block;
+            text-decoration: none;
+            color:#fff;
+        }
+        h1 + div {
+            .column(6);
+            padding-top: 35px;
+        }
+        div + div {
+            padding-top: 35px;
+            .column(6);
+        }
+
         #subscribe {
             margin-top: 45px;
             margin-bottom: 25px;
@@ -579,79 +751,6 @@ footer {
         height: 41px;
         background: url(../assets/logo.png) no-repeat center; 
         }
-}
-
-
-@media (min-width: 768px) and (max-width: 940px) {
-
-.container {
-    max-width: 85%;
-    margin: 0 auto;
-    height: 100%;
-}
-/*--- horizontal &quot;block&quot; menu ---*/
-
-.nav {
-    display: block;
-    height: 100%;
-    width: 100%;
-    float: none;
-    ul {
-        height: 100%;
-        text-align: center;
-        li {
-            height: 100%;
-            display: inline-block;
-            
-            &:hover {
-                border-top: 1px solid #0FCF8C;
-                margin-top: -1px;
-            }
-        }
-        li a {
-            .vertical-align; 
-            display: block;
-            text-decoration: none;
-            font-size :0.813em;
-            color: #EEE;       
-            padding: 15px 20px;
-        }
-    }
-}
-
-/*--- header section ---*/
-
-header#header {
-    
-    nav {
-        width: 100%;
-        height: 70px;
-
-        .logoContainer {
-
-            display: block;
-            margin: 0 auto;
-            float: none;
-        }
-        .logo {
-    
-            float: none;
-            display: block;
-            margin: 0 auto;
-        }
-        .taglineHeader {
-            text-align: center;
-            opacity: 0.3;
-            color: white;
-            float: none;
-            margin-left: 0;
-            padding-left:0;
-            border-left: none;
-        
-
-        }
-
-    }
 }
 
 
